@@ -21,6 +21,6 @@ const commentSchema = new mongoose.Schema(
     }
 )
 
-commiteSchema.plugin(mongooseAggregatePaginate)
+commentSchema.plugin(mongooseAggregatePaginate)
 
 export const comment = mongoose.model("comment", commentSchema)
